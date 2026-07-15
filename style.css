@@ -231,18 +231,17 @@ a {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
   background: var(--card-bg);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 1.5rem;
+  border-radius: 14px;
+  overflow: hidden;
   box-shadow: var(--shadow);
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
@@ -252,16 +251,47 @@ a {
   border-color: var(--primary);
 }
 
-.project-type {
+.project-thumb {
+  background: #0d0d10;
+  border-bottom: 1px solid var(--border);
+  padding: 1.1rem 1.2rem;
+  overflow: hidden;
+}
+
+.project-code {
+  margin: 0;
+  font-family: "JetBrains Mono", "Courier New", monospace;
   font-size: 0.72rem;
+  line-height: 1.7;
+  color: #ccc;
+  white-space: pre;
+}
+
+.project-code .t-comment { color: #6a6f7a; }
+.project-code .t-tag { color: var(--primary); }
+.project-code .t-attr { color: #7fb0ff; }
+.project-code .t-str { color: #f0b45c; }
+.project-code .t-var { color: #b9a3ff; }
+
+.project-body {
+  padding: 1.4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-type {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  font-size: 0.7rem;
   font-weight: 700;
   color: var(--primary);
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  margin-bottom: 0.4rem;
 }
 
 .project-name {
-  margin: 0;
+  margin: 0 0 0.5rem;
   font-size: 1.1rem;
 }
 
@@ -272,11 +302,37 @@ a {
   flex-grow: 1;
 }
 
+.project-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.project-tag {
+  font-size: 0.7rem;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+}
+
 .project-link {
-  margin-top: 0.5rem;
   font-weight: 600;
   font-size: 0.85rem;
   color: var(--primary);
+  white-space: nowrap;
 }
 
 /* Timeline */

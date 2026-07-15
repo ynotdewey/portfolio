@@ -73,54 +73,187 @@
       <h2 class="section-title">Projects</h2>
       <p class="section-intro">A sample of client websites I've designed and developed, spanning dental practices, home services, and specialty contractors.</p>
       <div class="projects-grid">
-        <a class="project-card" href="https://distinctivedental.com/" target="_blank" rel="noopener noreferrer">
-          <div class="project-type">Dental Practice</div>
-          <h3 class="project-name">Distinctive Dental</h3>
-          <p class="project-desc">Patient-focused dental hygiene practice site emphasizing gentle, comfortable care.</p>
-          <span class="project-link">distinctivedental.com ↗</span>
-        </a>
-        <a class="project-card" href="https://andersondentalqc.com/" target="_blank" rel="noopener noreferrer">
-          <div class="project-type">Dental Practice</div>
-          <h3 class="project-name">Anderson Dental</h3>
-          <p class="project-desc">Quad Cities dental practice site featuring implant, restorative, and sedation services.</p>
-          <span class="project-link">andersondentalqc.com ↗</span>
-        </a>
-        <a class="project-card" href="https://chandler-cosmeticdentist.com/" target="_blank" rel="noopener noreferrer">
-          <div class="project-type">Dental Practice</div>
-          <h3 class="project-name">Chandler Dental Home</h3>
-          <p class="project-desc">Cosmetic and general dentistry site for a Chandler, AZ practice with tailored treatment plans.</p>
-          <span class="project-link">chandler-cosmeticdentist.com ↗</span>
-        </a>
-        <a class="project-card" href="https://dentistsurreybc.com/" target="_blank" rel="noopener noreferrer">
-          <div class="project-type">Dental Practice</div>
-          <h3 class="project-name">Strawberry Hill Family Dental</h3>
-          <p class="project-desc">Family dental practice website in Surrey, BC built around a personalized patient experience.</p>
-          <span class="project-link">dentistsurreybc.com ↗</span>
-        </a>
-        <a class="project-card" href="https://superior.ms/" target="_blank" rel="noopener noreferrer">
-          <div class="project-type">Home Services</div>
-          <h3 class="project-name">Superior Foundation Repair</h3>
-          <p class="project-desc">Residential foundation repair company site covering crack repair, leveling, and pier installation.</p>
-          <span class="project-link">superior.ms ↗</span>
-        </a>
-        <a class="project-card" href="https://coatingdesigns.com/" target="_blank" rel="noopener noreferrer">
-          <div class="project-type">Home Services</div>
-          <h3 class="project-name">Coating Designs</h3>
-          <p class="project-desc">Residential concrete coating company site showcasing garage floor and patio transformations.</p>
-          <span class="project-link">coatingdesigns.com ↗</span>
-        </a>
-        <a class="project-card" href="https://epoxyfloorsnmore.com/" target="_blank" rel="noopener noreferrer">
-          <div class="project-type">Home Services</div>
-          <h3 class="project-name">Epoxy Floors N More</h3>
-          <p class="project-desc">Epoxy and polyaspartic flooring specialist site serving Fort Myers, FL and Southwest Florida.</p>
-          <span class="project-link">epoxyfloorsnmore.com ↗</span>
-        </a>
-        <a class="project-card" href="https://trinitydentalarts.com/" target="_blank" rel="noopener noreferrer">
-          <div class="project-type">Dental Practice</div>
-          <h3 class="project-name">Trinity Dental Arts</h3>
-          <p class="project-desc">Implant and cosmetic dentistry site for a Trinity, FL practice with same-day full-arch services.</p>
-          <span class="project-link">trinitydentalarts.com ↗</span>
-        </a>
+        <div class="project-card">
+          <div class="project-thumb">
+            <pre class="project-code"><span class="t-comment">&lt;!-- Elementor section --&gt;</span>
+<span class="t-tag">&lt;div</span> <span class="t-attr">class=</span><span class="t-str">"hygiene-hero"</span><span class="t-tag">&gt;</span>
+  <span class="t-tag">&lt;h1&gt;</span><span class="t-var">{{ practice.name }}</span><span class="t-tag">&lt;/h1&gt;</span>
+  <span class="t-tag">&lt;p&gt;</span>Gentle, patient-first care<span class="t-tag">&lt;/p&gt;</span>
+<span class="t-tag">&lt;/div&gt;</span></pre>
+          </div>
+          <div class="project-body">
+            <div class="project-type">WordPress · Elementor</div>
+            <h3 class="project-name">Distinctive Dental</h3>
+            <p class="project-desc">Patient-focused dental hygiene practice site emphasizing gentle, comfortable care.</p>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="project-tag">WordPress</span>
+                <span class="project-tag">Elementor</span>
+                <span class="project-tag">SEO</span>
+              </div>
+              <a class="project-link" href="https://distinctivedental.com/" target="_blank" rel="noopener noreferrer">Visit ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb">
+            <pre class="project-code"><span class="t-comment">// Team bio module</span>
+<span class="t-tag">const</span> <span class="t-var">doctor</span> = {
+  <span class="t-attr">name:</span> <span class="t-str">'Dr. Anderson'</span>,
+  <span class="t-attr">since:</span> <span class="t-str">1997</span>,
+  <span class="t-attr">focus:</span> <span class="t-str">'Implants'</span>
+};</pre>
+          </div>
+          <div class="project-body">
+            <div class="project-type">WordPress · Elementor</div>
+            <h3 class="project-name">Anderson Dental</h3>
+            <p class="project-desc">Quad Cities dental practice site featuring implant, restorative, and sedation services.</p>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="project-tag">WordPress</span>
+                <span class="project-tag">Elementor</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+              <a class="project-link" href="https://andersondentalqc.com/" target="_blank" rel="noopener noreferrer">Visit ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb">
+            <pre class="project-code"><span class="t-comment">/* Treatment cards */</span>
+<span class="t-tag">.treatment-card</span> {
+  <span class="t-attr">border-radius:</span> <span class="t-str">14px</span>;
+  <span class="t-attr">transition:</span> <span class="t-str">transform .2s</span>;
+}
+<span class="t-tag">.treatment-card</span><span class="t-var">:hover</span> { <span class="t-attr">transform:</span> <span class="t-str">translateY(-4px)</span>; }</pre>
+          </div>
+          <div class="project-body">
+            <div class="project-type">WordPress · Elementor</div>
+            <h3 class="project-name">Chandler Dental Home</h3>
+            <p class="project-desc">Cosmetic and general dentistry site for a Chandler, AZ practice with tailored treatment plans.</p>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="project-tag">WordPress</span>
+                <span class="project-tag">Elementor</span>
+                <span class="project-tag">CSS</span>
+              </div>
+              <a class="project-link" href="https://chandler-cosmeticdentist.com/" target="_blank" rel="noopener noreferrer">Visit ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb">
+            <pre class="project-code"><span class="t-comment">&lt;!-- Booking widget --&gt;</span>
+<span class="t-tag">&lt;form</span> <span class="t-attr">id=</span><span class="t-str">"book-visit"</span><span class="t-tag">&gt;</span>
+  <span class="t-tag">&lt;input</span> <span class="t-attr">type=</span><span class="t-str">"tel"</span> <span class="t-attr">required</span><span class="t-tag">&gt;</span>
+  <span class="t-tag">&lt;button&gt;</span>Book Now<span class="t-tag">&lt;/button&gt;</span>
+<span class="t-tag">&lt;/form&gt;</span></pre>
+          </div>
+          <div class="project-body">
+            <div class="project-type">WordPress · Elementor</div>
+            <h3 class="project-name">Strawberry Hill Family Dental</h3>
+            <p class="project-desc">Family dental practice website in Surrey, BC built around a personalized patient experience.</p>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="project-tag">WordPress</span>
+                <span class="project-tag">Elementor</span>
+                <span class="project-tag">HTML5</span>
+              </div>
+              <a class="project-link" href="https://dentistsurreybc.com/" target="_blank" rel="noopener noreferrer">Visit ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb">
+            <pre class="project-code"><span class="t-comment">// Service list</span>
+<span class="t-tag">const</span> <span class="t-var">services</span> = [
+  <span class="t-str">'Crack Repair'</span>,
+  <span class="t-str">'Leveling'</span>,
+  <span class="t-str">'Pier Installation'</span>
+];</pre>
+          </div>
+          <div class="project-body">
+            <div class="project-type">WordPress · Custom Build</div>
+            <h3 class="project-name">Superior Foundation Repair</h3>
+            <p class="project-desc">Residential foundation repair company site covering crack repair, leveling, and pier installation.</p>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="project-tag">WordPress</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">SEO</span>
+              </div>
+              <a class="project-link" href="https://superior.ms/" target="_blank" rel="noopener noreferrer">Visit ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb">
+            <pre class="project-code"><span class="t-comment">/* Gallery grid */</span>
+<span class="t-tag">.gallery</span> {
+  <span class="t-attr">display:</span> <span class="t-str">grid</span>;
+  <span class="t-attr">grid-template-columns:</span> <span class="t-str">repeat(3, 1fr)</span>;
+  <span class="t-attr">gap:</span> <span class="t-str">1rem</span>;
+}</pre>
+          </div>
+          <div class="project-body">
+            <div class="project-type">WordPress · Elementor</div>
+            <h3 class="project-name">Coating Designs</h3>
+            <p class="project-desc">Residential concrete coating company site showcasing garage floor and patio transformations.</p>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="project-tag">WordPress</span>
+                <span class="project-tag">Elementor</span>
+                <span class="project-tag">CSS</span>
+              </div>
+              <a class="project-link" href="https://coatingdesigns.com/" target="_blank" rel="noopener noreferrer">Visit ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb">
+            <pre class="project-code"><span class="t-comment">// Quote request</span>
+<span class="t-tag">function</span> <span class="t-var">getQuote</span>(<span class="t-attr">sqft</span>) {
+  <span class="t-tag">return</span> <span class="t-var">fetch</span>(<span class="t-str">'/api/quote'</span>, {
+    <span class="t-attr">method:</span> <span class="t-str">'POST'</span>
+  });
+}</pre>
+          </div>
+          <div class="project-body">
+            <div class="project-type">WordPress · Elementor</div>
+            <h3 class="project-name">Epoxy Floors N More</h3>
+            <p class="project-desc">Epoxy and polyaspartic flooring specialist site serving Fort Myers, FL and Southwest Florida.</p>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="project-tag">WordPress</span>
+                <span class="project-tag">Elementor</span>
+                <span class="project-tag">SEO</span>
+              </div>
+              <a class="project-link" href="https://epoxyfloorsnmore.com/" target="_blank" rel="noopener noreferrer">Visit ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb">
+            <pre class="project-code"><span class="t-comment">&lt;!-- Metafield block --&gt;</span>
+<span class="t-tag">&lt;div</span> <span class="t-attr">class=</span><span class="t-str">"doctor-badge"</span><span class="t-tag">&gt;</span>
+  <span class="t-var">{{ doctor.credentials }}</span>
+<span class="t-tag">&lt;/div&gt;</span>
+<span class="t-comment">// DMD, MAGD, DABOI/ID</span></pre>
+          </div>
+          <div class="project-body">
+            <div class="project-type">WordPress · Elementor</div>
+            <h3 class="project-name">Trinity Dental Arts</h3>
+            <p class="project-desc">Implant and cosmetic dentistry site for a Trinity, FL practice with same-day full-arch services.</p>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="project-tag">WordPress</span>
+                <span class="project-tag">Elementor</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+              <a class="project-link" href="https://trinitydentalarts.com/" target="_blank" rel="noopener noreferrer">Visit ↗</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
