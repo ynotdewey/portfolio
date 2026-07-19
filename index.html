@@ -5,13 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dewey Richard O. Ynot | Web Designer &amp; Developer</title>
   <meta name="description" content="Portfolio of Dewey Richard O. Ynot, Web Designer & Developer specializing in WordPress, Elementor, Shopify, Duda, and front-end development.">
+  <link rel="canonical" href="https://ynotdewey.github.io/portfolio/">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0b0c14">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dewey Richard O. Ynot | Web Designer & Developer">
+  <meta property="og:description" content="Portfolio of Dewey Richard O. Ynot, Web Designer & Developer specializing in WordPress, Elementor, Shopify, Duda, and front-end development.">
+  <meta property="og:url" content="https://ynotdewey.github.io/portfolio/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Dewey Richard O. Ynot | Web Designer & Developer">
+  <meta name="twitter:description" content="Portfolio of Dewey Richard O. Ynot, Web Designer & Developer specializing in WordPress, Elementor, Shopify, Duda, and front-end development.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
   <header class="site-header">
     <nav class="navbar container">
       <a href="#home" class="logo">Dewey<span>.</span></a>
-      <ul class="nav-links">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -19,58 +41,178 @@
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
-      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Let's Talk</a>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-controls="nav-links" aria-expanded="false">☰</button>
+      </div>
     </nav>
   </header>
 
-  <main>
+  <main id="main">
     <section id="home" class="hero container">
-      <p class="eyebrow">Hello, I'm</p>
-      <h1>Dewey Richard O. Ynot</h1>
-      <h2 class="title-role">Web Designer &amp; Developer</h2>
-      <p class="hero-text">
-        I build high-converting, responsive websites and bring designs to life with
-        WordPress, Elementor, Shopify, and Duda — backed by 10+ years of experience
-        across web development, SEO, and quality assurance.
-      </p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Get in Touch</a>
-        <a href="#experience" class="btn btn-outline">View Experience</a>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Hello, I'm</p>
+        <h1>Dewey Richard<br><span class="text-gradient">O. Ynot</span></h1>
+        <h2 class="title-role">Web Designer &amp; Developer</h2>
+        <p class="hero-text">
+          I build high-converting, responsive websites and bring designs to life with
+          WordPress, Elementor, Shopify, and Duda — backed by 10+ years of experience
+          across web development, SEO, and quality assurance.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects <span aria-hidden="true">→</span></a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+        <div class="hero-social">
+          <a href="mailto:ynotdewey@gmail.com" aria-label="Email Dewey" class="social-icon">✉️</a>
+          <a href="tel:+639916805047" aria-label="Call Dewey" class="social-icon">📞</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-frame">
+          <div class="hero-avatar">D<span>.</span></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Years<br>Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">8+</span>
+            <span class="stat-label">Projects<br>Featured</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">US &amp; CA</span>
+            <span class="stat-label">Client<br>Locations</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="about" class="container">
-      <h2 class="section-title">About Me</h2>
-      <p class="about-text">
-        I'm a hard-working, dedicated web professional who thrives in collaborative,
-        fast-paced teams. Over the years I've worn many hats — developer, SEO specialist,
-        and QA analyst — giving me a well-rounded perspective on building websites that
-        look great, rank well, and work flawlessly across browsers and devices. I'm
-        highly trainable, versatile, and comfortable working under pressure to meet
-        deadlines and deliver results.
-      </p>
+      <div class="about-layout">
+        <div class="about-copy">
+          <p class="eyebrow">About Me</p>
+          <h2 class="section-title no-underline">Building websites that <span class="text-gradient">get results.</span></h2>
+          <p class="about-text">
+            I'm a hard-working, dedicated web professional who thrives in collaborative,
+            fast-paced teams. Over the years I've worn many hats — developer, SEO specialist,
+            and QA analyst — giving me a well-rounded perspective on building websites that
+            look great, rank well, and work flawlessly across browsers and devices.
+          </p>
+          <a href="#experience" class="btn btn-outline">More About Me <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>Full-Stack Builder</h3>
+            <p>WordPress, Elementor, Shopify &amp; Duda</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3>Performance Focused</h3>
+            <p>Fast, optimized &amp; scalable</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3>SEO-Minded</h3>
+            <p>On/off-page SEO &amp; analytics</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <h3>QA Rigor</h3>
+            <p>Functional, regression &amp; cross-browser testing</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </div>
+            <h3>Design-to-Code</h3>
+            <p>Photoshop &amp; Illustrator comps, pixel-perfect build</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Collaborative</h3>
+            <p>Clear communication, team player</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>Deadline-Driven</h3>
+            <p>Comfortable working under pressure</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <h3>Always Learning</h3>
+            <p>Versatile, trainable, many hats worn</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="skills" class="container">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills-grid">
-        <span class="skill-badge">HTML5</span>
-        <span class="skill-badge">CSS</span>
-        <span class="skill-badge">JavaScript</span>
-        <span class="skill-badge">jQuery</span>
-        <span class="skill-badge">WordPress</span>
-        <span class="skill-badge">Elementor</span>
-        <span class="skill-badge">Shopify</span>
-        <span class="skill-badge">DUDA</span>
-        <span class="skill-badge">SEO</span>
-        <span class="skill-badge">Photoshop</span>
-        <span class="skill-badge">Illustrator</span>
+      <p class="eyebrow">Skills</p>
+      <h2 class="section-title no-underline">Technologies <span class="text-gradient">I work with</span></h2>
+      <div class="skills-categories">
+        <div class="skill-category">
+          <h3><span class="cat-icon">🖥️</span> Frontend</h3>
+          <ul class="skill-list">
+            <li><span class="skill-chip chip-html">5</span> HTML5</li>
+            <li><span class="skill-chip chip-css">3</span> CSS</li>
+            <li><span class="skill-chip chip-js">JS</span> JavaScript</li>
+            <li><span class="skill-chip chip-jquery">jQ</span> jQuery</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3><span class="cat-icon">🧩</span> Platforms &amp; Builders</h3>
+          <ul class="skill-list">
+            <li><span class="skill-chip chip-wp">W</span> WordPress</li>
+            <li><span class="skill-chip chip-elementor">E</span> Elementor</li>
+            <li><span class="skill-chip chip-shopify">S</span> Shopify</li>
+            <li><span class="skill-chip chip-duda">D</span> DUDA</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3><span class="cat-icon">🎨</span> Design Tools</h3>
+          <ul class="skill-list">
+            <li><span class="skill-chip chip-ps">Ps</span> Photoshop</li>
+            <li><span class="skill-chip chip-ai">Ai</span> Illustrator</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3><span class="cat-icon">📈</span> Practices</h3>
+          <ul class="skill-list">
+            <li><span class="skill-chip chip-seo">🔍</span> SEO</li>
+            <li><span class="skill-chip chip-qa">QA</span> Cross-Browser Testing</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <section id="projects" class="container">
-      <h2 class="section-title">Projects</h2>
+      <div class="section-heading-row">
+        <div>
+          <p class="eyebrow">Featured Projects</p>
+          <h2 class="section-title no-underline">Some things <span class="text-gradient">I've built</span></h2>
+        </div>
+      </div>
       <p class="section-intro">A sample of client websites I've designed and developed, spanning dental practices, home services, and specialty contractors.</p>
       <div class="projects-grid">
         <div class="project-card">
@@ -258,9 +400,13 @@
     </section>
 
     <section id="experience" class="container">
-      <h2 class="section-title">Experience</h2>
+      <p class="eyebrow">Experience</p>
+      <h2 class="section-title no-underline">My professional <span class="text-gradient">journey</span></h2>
       <ol class="timeline">
         <li class="timeline-item">
+          <span class="timeline-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </span>
           <div class="timeline-date">March 2024 – Present</div>
           <h3>Website Developer</h3>
           <p class="timeline-company">Contractor Click</p>
@@ -269,6 +415,9 @@
             pages, communicated with clients, and diagnosed/fixed cross-browser bugs.</p>
         </li>
         <li class="timeline-item">
+          <span class="timeline-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </span>
           <div class="timeline-date">January 2023 – January 2024</div>
           <h3>Front End Developer (BigCommerce)</h3>
           <p class="timeline-company">Randem Group</p>
@@ -277,6 +426,9 @@
             ensured cross-browser/device compatibility.</p>
         </li>
         <li class="timeline-item">
+          <span class="timeline-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </span>
           <div class="timeline-date">August 2020 – December 2022</div>
           <h3>Web Design / Developer</h3>
           <p class="timeline-company">Dreamscape Networks</p>
@@ -285,6 +437,9 @@
             proprietary "Siteplus" builder and applied basic SEO to every site.</p>
         </li>
         <li class="timeline-item">
+          <span class="timeline-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </span>
           <div class="timeline-date">November 2019 – August 2020</div>
           <h3>SEO Specialist</h3>
           <p class="timeline-company">411 Locals</p>
@@ -293,6 +448,9 @@
             and Google Analytics reporting.</p>
         </li>
         <li class="timeline-item">
+          <span class="timeline-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </span>
           <div class="timeline-date">October 2016 – September 2019</div>
           <h3>Web QA Specialist</h3>
           <p class="timeline-company">Raso Solutions, LLC</p>
@@ -301,6 +459,9 @@
             bugs, and worked within an Agile environment.</p>
         </li>
         <li class="timeline-item">
+          <span class="timeline-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.1-2.8-2.8L7 14"/></svg>
+          </span>
           <div class="timeline-date">January 2013 – October 2016</div>
           <h3>Data Analyst</h3>
           <p class="timeline-company">Accenture</p>
@@ -308,6 +469,9 @@
             and designed reports.</p>
         </li>
         <li class="timeline-item">
+          <span class="timeline-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </span>
           <div class="timeline-date">October 2012 – March 2013</div>
           <h3>Web Quality Analyst</h3>
           <p class="timeline-company">Next IX</p>
@@ -319,29 +483,59 @@
     </section>
 
     <section id="education" class="container">
-      <h2 class="section-title">Education</h2>
+      <p class="eyebrow">Education</p>
+      <h2 class="section-title no-underline">Academic <span class="text-gradient">background</span></h2>
       <div class="education-card">
-        <h3>Bachelor of Science in Information Technology</h3>
-        <p class="timeline-company">Major in Web Applications Development</p>
-        <p>University of San Jose–Recoletos, Basak Pardo, Cebu City · 2009 – 2013</p>
+        <span class="education-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
+        </span>
+        <div>
+          <h3>Bachelor of Science in Information Technology</h3>
+          <p class="timeline-company">Major in Web Applications Development</p>
+          <p>University of San Jose–Recoletos, Basak Pardo, Cebu City · 2009 – 2013</p>
+        </div>
       </div>
     </section>
 
     <section id="contact" class="container">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact-grid">
-        <a href="mailto:ynotdewey@gmail.com" class="contact-card">
-          <span class="contact-icon">✉️</span>
-          <span>ynotdewey@gmail.com</span>
-        </a>
-        <a href="tel:+639916805047" class="contact-card">
-          <span class="contact-icon">📞</span>
-          <span>0991 680 5047</span>
-        </a>
-        <div class="contact-card">
-          <span class="contact-icon">📍</span>
-          <span>Linao, Minglanilla, Cebu City, Philippines</span>
+      <div class="contact-panel">
+        <div class="contact-panel-copy">
+          <p class="eyebrow">Let's Work Together</p>
+          <h2 class="section-title no-underline">Have a project <span class="text-gradient">in mind?</span></h2>
+          <p>I'm always open to discussing new opportunities and interesting projects.</p>
         </div>
+
+        <div class="contact-info-row">
+          <a href="mailto:ynotdewey@gmail.com" class="contact-item">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22 6 12 13 2 6"/></svg>
+            </span>
+            <span>
+              <strong>Email</strong>
+              ynotdewey@gmail.com
+            </span>
+          </a>
+          <a href="tel:+639916805047" class="contact-item">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <span>
+              <strong>Phone</strong>
+              +63 991 680 5047
+            </span>
+          </a>
+          <div class="contact-item">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <span>
+              <strong>Location</strong>
+              Linao, Minglanilla, Cebu City, Philippines
+            </span>
+          </div>
+        </div>
+
+        <a href="mailto:ynotdewey@gmail.com" class="btn btn-primary contact-cta">Let's Talk <span aria-hidden="true">→</span></a>
       </div>
     </section>
   </main>
